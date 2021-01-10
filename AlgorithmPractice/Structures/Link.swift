@@ -38,6 +38,20 @@ extension List {
     
     return head
   }
+  
+  static func showListContent(with head: ListNode?) {
+    guard head != nil else {
+      print("Empty List")
+      return
+    }
+    var elements: [Int] = []
+    var node = head
+    while node != nil {
+      elements.append(node!.val)
+      node = node?.next
+    }
+    print("List content: \(elements)")
+  }
 }
 
 extension Solution {
