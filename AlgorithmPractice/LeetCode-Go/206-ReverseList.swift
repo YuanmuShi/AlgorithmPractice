@@ -11,9 +11,9 @@ import Foundation
 extension Solution {
   static func test206() {
     let head = List.createList([1, 2, 3, 4, 5])
-    List.showListContent(with: head)
+    List.showListContent(with: head, preText: "Original List")
     let resNode = Self.reverseList(head)
-    List.showListContent(with: resNode)
+    List.showListContent(with: resNode, preText: "Result List")
   }
   
   static func reverseList(_ head: ListNode?) -> ListNode? {

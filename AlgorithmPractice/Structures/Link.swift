@@ -39,7 +39,7 @@ extension List {
     return head
   }
   
-  static func showListContent(with head: ListNode?) {
+  static func showListContent(with head: ListNode?, preText: String = "List content") {
     guard head != nil else {
       print("Empty List")
       return
@@ -50,7 +50,7 @@ extension List {
       elements.append(node!.val)
       node = node?.next
     }
-    print("List content: \(elements)")
+    print("\(preText): \(elements)")
   }
 }
 
