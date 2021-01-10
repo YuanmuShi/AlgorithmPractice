@@ -11,6 +11,7 @@
 		04D12BCC25AAD81F00909FAD /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BC925AAD81F00909FAD /* Hash.swift */; };
 		04D12BCD25AAD81F00909FAD /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BCA25AAD81F00909FAD /* Link.swift */; };
 		04D12BCE25AAD81F00909FAD /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BCB25AAD81F00909FAD /* Tree.swift */; };
+		04D12BD225AADAC700909FAD /* 206-ReverseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BD125AADAC700909FAD /* 206-ReverseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		04D12BC925AAD81F00909FAD /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
 		04D12BCA25AAD81F00909FAD /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		04D12BCB25AAD81F00909FAD /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		04D12BD125AADAC700909FAD /* 206-ReverseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "206-ReverseList.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		04D12BC725AAD81F00909FAD /* LeetCode-Go */ = {
 			isa = PBXGroup;
 			children = (
+				04D12BD125AADAC700909FAD /* 206-ReverseList.swift */,
 			);
 			path = "LeetCode-Go";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				04D12BCD25AAD81F00909FAD /* Link.swift in Sources */,
 				04D12BCE25AAD81F00909FAD /* Tree.swift in Sources */,
+				04D12BD225AADAC700909FAD /* 206-ReverseList.swift in Sources */,
 				041179C524C5607600E62BC7 /* main.swift in Sources */,
 				04D12BCC25AAD81F00909FAD /* Hash.swift in Sources */,
 			);
