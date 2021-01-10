@@ -9,5 +9,3 @@
 import Foundation
 
 enum Solution {}
-
-Solution.test206()

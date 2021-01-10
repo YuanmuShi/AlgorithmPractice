@@ -16,7 +16,7 @@ extension Solution {
     List.showListContent(with: resNode, preText: "Result List")
   }
   
-  static func reverseList(_ head: ListNode?) -> ListNode? {
+  private static func reverseList(_ head: ListNode?) -> ListNode? {
     guard head?.next != nil else {
       return head
     }
