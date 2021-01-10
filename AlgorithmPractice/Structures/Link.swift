@@ -20,11 +20,13 @@ public class ListNode {
 public class List {}
 
 extension List {
-  static func createList(_ list: [Int]) -> ListNode? {
+  static func createList(_ list: [Int], cycleNodeValue: Int? = nil) -> ListNode? {
     guard !list.isEmpty else { return nil }
     
     var head: ListNode?
     var preNode: ListNode?
+    var cycleNode: ListNode?
+    let lastNodeValue = list.last
     
     for value in list {
       let node = ListNode(value)
@@ -34,6 +36,16 @@ extension List {
       
       preNode?.next = node
       preNode = node
+      
+      if value == cycleNodeValue {
+        cycleNode = node
+      }
+      
+      if cycleNode != nil,
+         let val = lastNodeValue,
+         value == val {
+        node.next = cycleNode
+      }
     }
     
     return head
@@ -44,13 +56,24 @@ extension List {
       print("Empty List")
       return
     }
+    
     var elements: [Int] = []
     var node = head
+    var cycleValue: Int?
+    
     while node != nil {
+      if elements.contains(node!.val) {
+        cycleValue = node?.val
+        break
+      }
       elements.append(node!.val)
       node = node?.next
     }
-    print("\(preText): \(elements)")
+    if let cycleValue = cycleValue {
+      print("\(preText): \(elements), cycle node value: \(cycleValue)")
+    } else {
+      print("\(preText): \(elements)")
+    }
   }
 }
 

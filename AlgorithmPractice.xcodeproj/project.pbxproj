@@ -13,6 +13,7 @@
 		04D12BCE25AAD81F00909FAD /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BCB25AAD81F00909FAD /* Tree.swift */; };
 		04D12BD225AADAC700909FAD /* 206-ReverseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BD125AADAC700909FAD /* 206-ReverseList.swift */; };
 		04D12BD725AB17BB00909FAD /* 24-SwapPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BD625AB17BB00909FAD /* 24-SwapPairs.swift */; };
+		04D12BDB25AB211B00909FAD /* 141-HasCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		04D12BCB25AAD81F00909FAD /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		04D12BD125AADAC700909FAD /* 206-ReverseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "206-ReverseList.swift"; sourceTree = "<group>"; };
 		04D12BD625AB17BB00909FAD /* 24-SwapPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24-SwapPairs.swift"; sourceTree = "<group>"; };
+		04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "141-HasCycle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				04D12BD625AB17BB00909FAD /* 24-SwapPairs.swift */,
+				04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */,
 				04D12BD125AADAC700909FAD /* 206-ReverseList.swift */,
 			);
 			path = "LeetCode-Go";
@@ -154,6 +157,7 @@
 				04D12BD725AB17BB00909FAD /* 24-SwapPairs.swift in Sources */,
 				04D12BCD25AAD81F00909FAD /* Link.swift in Sources */,
 				04D12BCE25AAD81F00909FAD /* Tree.swift in Sources */,
+				04D12BDB25AB211B00909FAD /* 141-HasCycle.swift in Sources */,
 				04D12BD225AADAC700909FAD /* 206-ReverseList.swift in Sources */,
 				041179C524C5607600E62BC7 /* main.swift in Sources */,
 				04D12BCC25AAD81F00909FAD /* Hash.swift in Sources */,
