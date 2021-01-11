@@ -10,7 +10,7 @@ import Foundation
 
 extension Solution {
   static func test20() {
-    print("Test 20 result: \(Self.isValid("({[)"))")
+    print("Test 20 result: \(Self.isValid2("({[)"))")
   }
   
   private static func isValid(_ s: String) -> Bool {
@@ -27,6 +27,30 @@ extension Solution {
          let pair = pairs[char],
          pair == containers.last {
         containers = containers.dropLast()
+      } else {
+        containers.append(char)
+      }
+    }
+    
+    return containers.isEmpty
+  }
+    
+  private static func isValid2(_ s: String) -> Bool {
+    guard !s.isEmpty else {
+      return false
+    }
+    
+    var containers: [Character] = []
+    let pairs: [Character: Character] = [")": "(", "}": "{", "]": "["]
+    
+    for char in s {
+      if pairs.keys.contains(char) {
+        let pair = pairs[char]
+        if pair == containers.last {
+          containers = containers.dropLast()
+        } else {
+          return false
+        }
       } else {
         containers.append(char)
       }

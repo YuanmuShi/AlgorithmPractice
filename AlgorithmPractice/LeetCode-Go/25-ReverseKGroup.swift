@@ -20,22 +20,7 @@ extension Solution {
     guard head?.next != nil, k > 1 else {
       return head
     }
-    
-    var preNode: ListNode?
-    var segmentHead = head
-    var segmentTrail = head
-    
-    (0..<k).forEach { _ in
-      segmentTrail = segmentTrail?.next
-    }
-    
-    var nextHead = segmentTrail?.next
-    
-    
-    
-    
-    
-    
-    return preNode
+    /// TODO: Need to do
+    return nil
   }
 }
