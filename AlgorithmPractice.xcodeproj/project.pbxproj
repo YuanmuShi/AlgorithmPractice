@@ -16,6 +16,7 @@
 		04D12BDB25AB211B00909FAD /* 141-HasCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */; };
 		04D12BDF25AB333000909FAD /* 142-DetectCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */; };
 		04D12BE225AB3D1200909FAD /* 25-ReverseKGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BE125AB3D1200909FAD /* 25-ReverseKGroup.swift */; };
+		04D12BE725AC17CD00909FAD /* 20-IsValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BE625AC17CD00909FAD /* 20-IsValid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "141-HasCycle.swift"; sourceTree = "<group>"; };
 		04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "142-DetectCycle.swift"; sourceTree = "<group>"; };
 		04D12BE125AB3D1200909FAD /* 25-ReverseKGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "25-ReverseKGroup.swift"; sourceTree = "<group>"; };
+		04D12BE625AC17CD00909FAD /* 20-IsValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-IsValid.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		04D12BC725AAD81F00909FAD /* LeetCode-Go */ = {
 			isa = PBXGroup;
 			children = (
+				04D12BE625AC17CD00909FAD /* 20-IsValid.swift */,
 				04D12BD625AB17BB00909FAD /* 24-SwapPairs.swift */,
 				04D12BE125AB3D1200909FAD /* 25-ReverseKGroup.swift */,
 				04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */,
@@ -164,6 +167,7 @@
 				04D12BCD25AAD81F00909FAD /* Link.swift in Sources */,
 				04D12BCE25AAD81F00909FAD /* Tree.swift in Sources */,
 				04D12BDB25AB211B00909FAD /* 141-HasCycle.swift in Sources */,
+				04D12BE725AC17CD00909FAD /* 20-IsValid.swift in Sources */,
 				04D12BD225AADAC700909FAD /* 206-ReverseList.swift in Sources */,
 				04D12BDF25AB333000909FAD /* 142-DetectCycle.swift in Sources */,
 				041179C524C5607600E62BC7 /* main.swift in Sources */,
