@@ -10,24 +10,62 @@ import Foundation
 
 extension Solution {
   static func test703() {
-    let kthLargest = KthLargest(3, [4, 5, 8, 2])
-    print(kthLargest.add2(3))
-    print(kthLargest.add2(5))
-    print(kthLargest.add2(10))
-    print(kthLargest.add2(9))
-    print(kthLargest.add2(4))
+    let kthLargest = KthLargest(3, [5, -1])
+    print(kthLargest.add(2))
+    print(kthLargest.add(1))
+    print(kthLargest.add(-1))
+    print(kthLargest.add(3))
+    print(kthLargest.add(4))
   }
 }
 
 class KthLargest {
-  private var nums: [Int]
+  
+  private var nums: [Int] = []
+  
   private let k: Int
+  private var kthLargestNums: [Int] = []
 
   init(_ k: Int, _ nums: [Int]) {
     self.k = k
-    self.nums = nums.sorted(by: { $0 > $1 })
+    
+    nums.forEach { [weak self] num in
+      self?.add(num)
+    }
   }
-
+  
+  @discardableResult
+  func add(_ val: Int) -> Int {
+    func sortKthNums() {
+      guard kthLargestNums.count > 1 else { return }
+      let maxIndex = kthLargestNums.count - 1
+      for i in 0..<maxIndex {
+        let num = kthLargestNums[maxIndex - i]
+        let pre = kthLargestNums[maxIndex - i - 1]
+        
+        if pre >= num { break }
+        kthLargestNums[maxIndex - i - 1] = num
+        kthLargestNums[maxIndex - i] = pre
+      }
+    }
+    
+    if kthLargestNums.count < k {
+      kthLargestNums.append(val)
+      sortKthNums()
+      return kthLargestNums.last ?? 0
+    }
+    
+    guard let lastNum = kthLargestNums.last else { return 0 }
+    
+    if lastNum > val {
+      return lastNum
+    }
+    kthLargestNums.removeLast()
+    kthLargestNums.append(val)
+    sortKthNums()
+    return kthLargestNums.last ?? 0
+  }
+  
   func add2(_ val: Int) -> Int {
     /// 超时
     nums.append(val)
