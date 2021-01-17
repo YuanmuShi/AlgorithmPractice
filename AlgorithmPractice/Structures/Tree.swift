@@ -188,7 +188,7 @@ extension Tree {
     }
 
     var i = 0
-    while 2 * i + 2 < nodes.count {
+    while 2 * i + 1 < nodes.count {
       guard let current = nodes[i] else {
         i += 1
         continue
