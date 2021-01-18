@@ -15,7 +15,7 @@ extension Solution {
     // [1, 1]
     let tree = Tree.create(tree: [5, 4, 6, nil, nil, 3, 7])
     print(tree!.asString)
-    print("\(isValidBST3(tree))")
+    print("\(isValidBST2(tree))")
   }
 
   // 中序遍历后判断是否是自增
@@ -44,10 +44,26 @@ extension Solution {
     return true
   }
   
+  // 改进的中序遍历
   private static func isValidBST2(_ root: TreeNode?) -> Bool {
-    return true
+    var preNode: TreeNode? = nil
+    func midOrder(_ root: TreeNode?) -> Bool {
+      guard let root = root else { return true }
+      if !midOrder(root.left) {
+        return false
+      }
+      if let preNode = preNode, preNode.val >= root.val {
+        return false
+      }
+      preNode = root
+      
+      return midOrder(root.right)
+    }
+    
+    return midOrder(root)
   }
   
+  // 递归判断
   private static func isValidBST3(_ root: TreeNode?) -> Bool {
     func validBst(_ node: TreeNode?, min: Int?, max: Int?) -> Bool {
       guard let node = node else { return true }
