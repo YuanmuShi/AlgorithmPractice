@@ -10,9 +10,12 @@ import Foundation
 
 extension Solution {
   static func test98() {
-    let tree = Tree.create(tree: [1, 1])
+    // [5, 1, 4, nil, nil, 3, 6]
+    // [5, 4, 6, nil, nil, 3, 7]
+    // [1, 1]
+    let tree = Tree.create(tree: [5, 4, 6, nil, nil, 3, 7])
     print(tree!.asString)
-    print("\(isValidBST1(tree))")
+    print("\(isValidBST3(tree))")
   }
 
   // 中序遍历后判断是否是自增
@@ -39,6 +42,37 @@ extension Solution {
     }
     
     return true
+  }
+  
+  private static func isValidBST2(_ root: TreeNode?) -> Bool {
+    return true
+  }
+  
+  private static func isValidBST3(_ root: TreeNode?) -> Bool {
+    func validBst(_ node: TreeNode?, min: Int?, max: Int?) -> Bool {
+      guard let node = node else { return true }
+      
+      if let min = min, node.val <= min {
+        return false
+      }
+      
+      if let max = max, node.val >= max {
+        return false
+      }
+      
+      if let left = node.left,
+         !validBst(left, min: min, max: node.val) {
+        return false
+      }
+      
+      if let right = node.right,
+         !validBst(right, min: node.val, max: max) {
+        return false
+      }
+      return true
+    }
+    
+    return validBst(root, min: nil, max: nil)
   }
   
   // 错误记录
