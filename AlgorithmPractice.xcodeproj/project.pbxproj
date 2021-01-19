@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000CCA0D25B730CB00395714 /* 50-PowxN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CCA0C25B730CB00395714 /* 50-PowxN.swift */; };
 		0010FD1825AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010FD1725AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift */; };
 		008F335425B5DC6F008C085F /* 235-LowestCommonAncestorOfaBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F335325B5DC6F008C085F /* 235-LowestCommonAncestorOfaBinarySearchTree.swift */; };
 		008F335725B5E045008C085F /* 236-LowestCommonAncestorOfaBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F335625B5E045008C085F /* 236-LowestCommonAncestorOfaBinaryTree.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000CCA0C25B730CB00395714 /* 50-PowxN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "50-PowxN.swift"; sourceTree = "<group>"; };
 		0010FD1725AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "239-SlidingWindowMaximum.swift"; sourceTree = "<group>"; };
 		008F335325B5DC6F008C085F /* 235-LowestCommonAncestorOfaBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "235-LowestCommonAncestorOfaBinarySearchTree.swift"; sourceTree = "<group>"; };
 		008F335625B5E045008C085F /* 236-LowestCommonAncestorOfaBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "236-LowestCommonAncestorOfaBinaryTree.swift"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				04D12BE625AC17CD00909FAD /* 20-IsValid.swift */,
 				04D12BD625AB17BB00909FAD /* 24-SwapPairs.swift */,
 				04D12BE125AB3D1200909FAD /* 25-ReverseKGroup.swift */,
+				000CCA0C25B730CB00395714 /* 50-PowxN.swift */,
 				041A098325B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift */,
 				04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */,
 				04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */,
@@ -211,6 +214,7 @@
 				00ED381625ACA2BA00922044 /* 232-MyQueue.swift in Sources */,
 				041179C524C5607600E62BC7 /* main.swift in Sources */,
 				04D12BCC25AAD81F00909FAD /* Hash.swift in Sources */,
+				000CCA0D25B730CB00395714 /* 50-PowxN.swift in Sources */,
 				00ED381325ACA25F00922044 /* 225-MyStack.swift in Sources */,
 				04D12BE225AB3D1200909FAD /* 25-ReverseKGroup.swift in Sources */,
 			);
