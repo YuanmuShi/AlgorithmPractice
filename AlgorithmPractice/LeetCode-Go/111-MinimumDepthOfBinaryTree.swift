@@ -14,7 +14,7 @@ extension Solution {
 //    let root = Tree.createByRecursion(array: [3, 9, 20, nil, nil, 15, 7])
 //    let root = Tree.createByRecursion(array: [1, 2, 3, 4, 5])
     let root = Tree.createByRecursion(array: [1, 1])
-    print(root!.asString)
+//    print(root!.asString)
     
     print("Depth: \(minDepth(root))")
   }
@@ -81,8 +81,16 @@ extension Solution {
   
   // 递归实现
   private static func minDepth(_ root: TreeNode?) -> Int {
-    // TODO: [1, 1] 用例未过
     guard let root = root else { return 0 }
-    return min(minDepth(root.left), minDepth(root.right)) + 1
+    
+    if root.left != nil, root.right != nil {
+      return min(minDepth(root.left), minDepth(root.right)) + 1
+    } else if root.left != nil {
+      return minDepth(root.left) + 1
+    } else if root.right != nil {
+      return minDepth(root.right) + 1
+    } else {
+      return 1
+    }
   }
 }
