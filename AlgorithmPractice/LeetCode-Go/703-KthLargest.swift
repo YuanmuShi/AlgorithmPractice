@@ -17,7 +17,7 @@ extension Solution {
 //    print(kthLargest.add(9))
 //    print(kthLargest.add(4))
     
-    let kthLargest = KthLargest(7, [-10,1,3,1,4,10,3,9,4,5,1])
+//    let kthLargest = KthLargest(7, [-10,1,3,1,4,10,3,9,4,5,1])
 //    print(kthLargest.add(3))
 //    print(kthLargest.add(2))
 //    print(kthLargest.add(3))
@@ -25,9 +25,9 @@ extension Solution {
 //    print(kthLargest.add(2))
 //    print(kthLargest.add(4))
     
-    [[3],[2],[3],[1],[2],[4],[5],[5],[6],[7],[7],[8],[2],[3],[1],[1],[1],[10],[11],[5],[6],[2],[4],[7],[8],[5],[6]].forEach { [weak kthLargest] e in
-      print(kthLargest?.add(e[0]))
-    }
+//    [[3],[2],[3],[1],[2],[4],[5],[5],[6],[7],[7],[8],[2],[3],[1],[1],[1],[10],[11],[5],[6],[2],[4],[7],[8],[5],[6]].forEach { [weak kthLargest] e in
+//      print(kthLargest?.add(e[0]))
+//    }
     
   }
 }

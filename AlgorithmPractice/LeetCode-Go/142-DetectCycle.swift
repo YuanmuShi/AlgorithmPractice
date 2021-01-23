@@ -13,7 +13,7 @@ extension Solution {
     let head = List.createList([1, 2, 3, 4, 5, 6, 7], cycleNodeValue: 3)
     List.showListContent(with: head, preText: "Original List")
     let result = Self.detectCycle(head)
-    print("Cycle Node: \(result?.val)")
+    print("Cycle Node: \(String(describing: result?.val))")
   }
   
   private static func detectCycle(_ head: ListNode?) -> ListNode? {

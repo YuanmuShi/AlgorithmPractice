@@ -8,10 +8,13 @@
 
 import Foundation
 
+typealias Node = TreeNode
+
 public class TreeNode {
   public var val: Int
   public var left: TreeNode?
   public var right: TreeNode?
+  public var next: TreeNode?
 
   public init() {
     self.val = 0
