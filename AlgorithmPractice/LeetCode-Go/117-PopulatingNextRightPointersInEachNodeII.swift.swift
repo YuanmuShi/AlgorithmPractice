@@ -10,38 +10,58 @@ import Foundation
 
 extension Solution {
   static func test117() {
-    let root = Tree.create(tree: [1, 2, 3, 4, 5, nil, 6, 7, nil, nil, nil, nil, nil, nil, 8]
+    let root = Tree.create(tree: [1, 2, 3, nil, 5, nil, 6, nil, nil, nil, nil, nil, nil, nil, 8]
     )
     print(root!.asString)
     let res = connect(root)
     print(res!.asString)
   }
 
-  // 递归解法
+  /*
+   层序遍历 空间复杂度为 O(1)
+   思路与算法
+
+     因为必须处理树上的所有节点，所以无法降低时间复杂度，但是可以尝试降低空间复杂度。
+
+     在方法一中，因为对树的结构一无所知，所以使用队列保证有序访问同一层的所有节点，并建立它们之间的连接。然而不难发现：一旦在某层的节点之间建立了 \rm nextnext 指针，那这层节点实际上形成了一个链表。因此，如果先去建立某一层的 \rm nextnext 指针，再去遍历这一层，就无需再使用队列了。
+
+     基于该想法，提出降低空间复杂度的思路：如果第 ii 层节点之间已经建立 \rm nextnext 指针，就可以通过 \rm nextnext 指针访问该层的所有节点，同时对于每个第 ii 层的节点，我们又可以通过它的 \rm leftleft 和 \rm rightright 指针知道其第 i+1i+1 层的孩子节点是什么，所以遍历过程中就能够按顺序为第 i + 1i+1 层节点建立 \rm nextnext 指针。
+
+     具体来说：
+
+     从根节点开始。因为第 00 层只有一个节点，不需要处理。可以在上一层为下一层建立 \rm nextnext 指针。该方法最重要的一点是：位于第 xx 层时为第 x + 1x+1 层建立 \rm nextnext 指针。一旦完成这些连接操作，移至第 x + 1x+1 层为第 x + 2x+2 层建立 \rm nextnext 指针。
+     当遍历到某层节点时，该层节点的 \rm nextnext 指针已经建立。这样就不需要队列从而节省空间。每次只要知道下一层的最左边的节点，就可以从该节点开始，像遍历链表一样遍历该层的所有节点。
+     */
   private static func connect(_ root: Node?) -> Node? {
-    func _connect(_ root: Node?, _ parentNode: Node?) {
-      guard root != nil else { return }
-      root?.left?.next = root?.right
+    var currentLevelStartNode: Node? = root
+    var nextLevelStartNode: Node?
+    
+    while currentLevelStartNode != nil {
+      var currentLevelNode = currentLevelStartNode
+      var current: Node?
       
-      var node = parentNode
-      
-      var nextNode: Node?
-      
-      while node != nil, nextNode == nil {
-        if node?.left != nil, root !== node?.left {
-          nextNode = node?.left
+      func _handleNode(_ node: Node?) {
+        guard node != nil else { return }
+        
+        if nextLevelStartNode == nil {
+          nextLevelStartNode = node
+          current = nextLevelStartNode
+        } else {
+          current?.next = node
+          current = current?.next
         }
-        nextNode = node?.right
-        node = node?.next
       }
       
-      root?.next = node
+      while currentLevelNode != nil {
+        _handleNode(currentLevelNode?.left)
+        _handleNode(currentLevelNode?.right)
+        currentLevelNode = currentLevelNode?.next
+      }
       
-      _connect(root?.left, root)
-      _connect(root?.right, root)
+      currentLevelStartNode = nextLevelStartNode
+      nextLevelStartNode = nil
     }
     
-    _connect(root, nil)
     return root
   }
   
