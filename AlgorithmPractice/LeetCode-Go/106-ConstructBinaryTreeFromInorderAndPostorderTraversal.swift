@@ -32,9 +32,29 @@ import Foundation
  */
 
 extension Solution {
-  static func test106() {}
+  static func test106() {
+//    let root = buildTree([9,3,15,20,7], [9,15,7,20,3])
+//    let root = buildTree([3, 2, 1], [3, 2, 1])
+    let root = buildTree([1, 2, 3], [3, 2, 1])
+    print(root!.asString)
+    
+  }
 
   private static func buildTree(_ inorder: [Int], _ postorder: [Int]) -> TreeNode? {
-    return nil
+    guard !inorder.isEmpty, inorder.count == postorder.count else  { return nil }
+    
+    let rootVal = postorder.last!
+    let root = TreeNode(rootVal)
+    
+    let leftInorder = Array(inorder.prefix(inorder.firstIndex(of: rootVal)!))
+    let leftPostorder = Array(postorder.prefix(leftInorder.count))
+    
+    let rightInorder = Array(inorder.suffix(inorder.count - leftInorder.count - 1))
+    let rightPostorder = Array(postorder[leftPostorder.count..<(leftPostorder.count + rightInorder.count)])
+    
+    root.left = buildTree(leftInorder, leftPostorder)
+    root.right = buildTree(rightInorder, rightPostorder)
+    
+    return root
   }
 }
