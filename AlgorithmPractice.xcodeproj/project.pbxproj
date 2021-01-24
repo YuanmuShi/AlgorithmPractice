@@ -21,6 +21,9 @@
 		041A098425B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A098325B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift */; };
 		04585CD425BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */; };
 		04585CD925BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */; };
+		04585CDE25BD9D620071145B /* 654-MaximumBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CDD25BD9D620071145B /* 654-MaximumBinaryTree.swift */; };
+		04585CE125BD9E320071145B /* 105-ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CE025BD9E320071145B /* 105-ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */; };
+		04585CE525BD9E9C0071145B /* 106-ConstructBinaryTreeFromInorderAndPostorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CE425BD9E9C0071145B /* 106-ConstructBinaryTreeFromInorderAndPostorderTraversal.swift */; };
 		047C6A6325ADB6FE002EB275 /* 703-KthLargest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C6A6225ADB6FE002EB275 /* 703-KthLargest.swift */; };
 		049613D325BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049613D225BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift */; };
 		049B335F25B7EF41002157E6 /* 102-BinaryTreeLevelOrderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B335E25B7EF41002157E6 /* 102-BinaryTreeLevelOrderTraversal.swift */; };
@@ -64,6 +67,9 @@
 		041A098325B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "98-ValidateBinarySearchTree.swift"; sourceTree = "<group>"; };
 		04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "116-PopulatingNextRightPointersInEachNode.swift.swift"; sourceTree = "<group>"; };
 		04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "117-PopulatingNextRightPointersInEachNodeII.swift.swift"; sourceTree = "<group>"; };
+		04585CDD25BD9D620071145B /* 654-MaximumBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "654-MaximumBinaryTree.swift"; sourceTree = "<group>"; };
+		04585CE025BD9E320071145B /* 105-ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "105-ConstructBinaryTreeFromPreorderAndInorderTraversal.swift"; sourceTree = "<group>"; };
+		04585CE425BD9E9C0071145B /* 106-ConstructBinaryTreeFromInorderAndPostorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "106-ConstructBinaryTreeFromInorderAndPostorderTraversal.swift"; sourceTree = "<group>"; };
 		047C6A6225ADB6FE002EB275 /* 703-KthLargest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "703-KthLargest.swift"; sourceTree = "<group>"; };
 		049613D225BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "114-FlattenBinaryTreeToLinkedListSubmissions.swift"; sourceTree = "<group>"; };
 		049B335E25B7EF41002157E6 /* 102-BinaryTreeLevelOrderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "102-BinaryTreeLevelOrderTraversal.swift"; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 				041A098325B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift */,
 				049B335E25B7EF41002157E6 /* 102-BinaryTreeLevelOrderTraversal.swift */,
 				00F56B5525B9D5CB002C0D56 /* 104-MaximumDepthOfBinaryTree.swift */,
+				04585CE025BD9E320071145B /* 105-ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */,
+				04585CE425BD9E9C0071145B /* 106-ConstructBinaryTreeFromInorderAndPostorderTraversal.swift */,
 				00F56B5925B9DB77002C0D56 /* 111-MinimumDepthOfBinaryTree.swift */,
 				049613D225BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift */,
 				04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */,
@@ -139,6 +147,7 @@
 				008F335325B5DC6F008C085F /* 235-LowestCommonAncestorOfaBinarySearchTree.swift */,
 				008F335625B5E045008C085F /* 236-LowestCommonAncestorOfaBinaryTree.swift */,
 				0010FD1725AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift */,
+				04585CDD25BD9D620071145B /* 654-MaximumBinaryTree.swift */,
 				047C6A6225ADB6FE002EB275 /* 703-KthLargest.swift */,
 			);
 			path = "LeetCode-Go";
@@ -214,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04585CE525BD9E9C0071145B /* 106-ConstructBinaryTreeFromInorderAndPostorderTraversal.swift in Sources */,
 				04585CD925BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift in Sources */,
 				04D12BD725AB17BB00909FAD /* 24-SwapPairs.swift in Sources */,
 				04D12BCD25AAD81F00909FAD /* Link.swift in Sources */,
@@ -226,6 +236,7 @@
 				0010FD1825AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift in Sources */,
 				04D12BE725AC17CD00909FAD /* 20-IsValid.swift in Sources */,
 				00ED381025ACA02100922044 /* Stack.swift in Sources */,
+				04585CE125BD9E320071145B /* 105-ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */,
 				00F56B5625B9D5CB002C0D56 /* 104-MaximumDepthOfBinaryTree.swift in Sources */,
 				041A098425B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift in Sources */,
 				049613D325BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift in Sources */,
@@ -239,6 +250,7 @@
 				041179C524C5607600E62BC7 /* main.swift in Sources */,
 				04D12BCC25AAD81F00909FAD /* Hash.swift in Sources */,
 				000CCA0D25B730CB00395714 /* 50-PowxN.swift in Sources */,
+				04585CDE25BD9D620071145B /* 654-MaximumBinaryTree.swift in Sources */,
 				00ED381325ACA25F00922044 /* 225-MyStack.swift in Sources */,
 				04D12BE225AB3D1200909FAD /* 25-ReverseKGroup.swift in Sources */,
 			);
