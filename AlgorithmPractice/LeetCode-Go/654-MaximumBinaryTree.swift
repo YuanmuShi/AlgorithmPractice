@@ -35,10 +35,26 @@ import Foundation
  */
 
 extension Solution {
-  
-  static func test654() {}
+  static func test654() {
+    let nums = [3, 2, 1, 6, 0, 5]
+    
+    let node = constructMaximumBinaryTree(nums)
+    print(node!.asString)
+  }
 
   private static func constructMaximumBinaryTree(_ nums: [Int]) -> TreeNode? {
-    return nil
+    guard !nums.isEmpty else { return nil }
+
+    var maxIndex = 0
+    nums.enumerated().forEach { index, num in
+      if num > nums[maxIndex] {
+        maxIndex = index
+      }
+    }
+    
+    let leftArray = Array(nums.prefix(maxIndex))
+    let rightArray = Array(nums.suffix(nums.count - maxIndex - 1))
+
+    return TreeNode(nums[maxIndex], constructMaximumBinaryTree(leftArray), constructMaximumBinaryTree(rightArray))
   }
 }
