@@ -59,30 +59,25 @@ extension Solution {
 class Codec {
   func serialize(_ root: TreeNode?) -> String {
     guard let root = root else { return "#" }
-
     return "\(root.val),\(serialize(root.left)),\(serialize(root.right))"
   }
 
   func deserialize(_ data: String) -> TreeNode? {
     guard !data.isEmpty else { return nil }
-    
-    let str = data.replacingOccurrences(of: "#,#,", with: "")
+    var nodeVals = data.split(separator: ",").map { Int($0) }
 
-    let nodeVals = str .split(separator: ",").map { Int($0) }
+    func _deserialize() -> TreeNode? {
+      guard let first = nodeVals.removeFirst() else {
+        return nil
+      }
 
-    func createByRecursion(array: [Int?], index: Int = 1) -> TreeNode? {
-      guard !array.isEmpty else { return nil }
-      guard index - 1 < array.count else { return nil }
-      guard let value = array[index - 1] else { return nil }
-
-      let node = TreeNode(value)
-      node.left = createByRecursion(array: array, index: 2 * index)
-      node.right = createByRecursion(array: array, index: 2 * index + 1)
-
-      return node
+      let root = TreeNode(first)
+      root.left = _deserialize()
+      root.right = _deserialize()
+      return root
     }
 
-    return createByRecursion(array: nodeVals)
+    return _deserialize()
   }
 }
 
