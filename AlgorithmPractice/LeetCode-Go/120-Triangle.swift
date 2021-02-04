@@ -46,9 +46,60 @@ import Foundation
  */
 
 extension Solution {
-  static func test120() {}
-  
+  static func test120() {
+    let triangle = [[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]]
+//    let triangle: [[Int]] = [[2]]
+    print(minimumTotal(triangle))
+  }
+
+  // DP 改进
   private static func minimumTotal(_ triangle: [[Int]]) -> Int {
-    return 0
+    guard !triangle.isEmpty else { return 0 }
+    var dp: [Int] = triangle.last!
+
+    for row in (0 ..< (triangle.count - 1)).reversed() {
+      for col in 0 ..< triangle[row].count {
+        dp[col] = min(dp[col], dp[col + 1]) + triangle[row][col]
+      }
+    }
+    return dp[0]
+  }
+  
+  // DP
+  private static func minimumTotal2(_ triangle: [[Int]]) -> Int {
+    guard !triangle.isEmpty else { return 0 }
+    var dp: [[Int]] = Array(repeating: [Int](), count: triangle.count - 1)
+    var lastRow: [Int] = []
+    triangle[triangle.count - 1].forEach { lastRow.append($0) }
+    dp.append(lastRow)
+
+    for row in (0 ..< (triangle.count - 1)).reversed() {
+      var tmpRow: [Int] = []
+      for col in 0 ..< triangle[row].count {
+        tmpRow.append(min(dp[row + 1][col], dp[row + 1][col + 1]) + triangle[row][col])
+      }
+      dp[row] = tmpRow
+    }
+
+    return dp[0][0]
+  }
+
+  // 递归 找到所有路径，并计算出所有路径的中最小值 LeetCode 上超时
+  private static func minimumTotal1(_ triangle: [[Int]]) -> Int {
+    var allPaths: [Int] = []
+
+    func recursion(row: Int, col: Int, sum: Int) {
+      guard row < triangle.count, col < triangle[row].count else { return }
+      let tmp = sum + triangle[row][col]
+      if row == triangle.count - 1 {
+        allPaths.append(tmp)
+      } else {
+        recursion(row: row + 1, col: col, sum: tmp)
+        recursion(row: row + 1, col: col + 1, sum: tmp)
+      }
+    }
+    recursion(row: 0, col: 0, sum: 0)
+
+    return allPaths.min() ?? 0
   }
 }
