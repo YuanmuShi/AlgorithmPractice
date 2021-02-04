@@ -40,7 +40,6 @@ import Foundation
 extension Solution {
   static func test70() {
     print(climbStairs(10))
-    print(dp(10))
   }
 
   private static func climbStairs(_ n: Int) -> Int {
