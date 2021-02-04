@@ -50,6 +50,7 @@
 		04D12BE725AC17CD00909FAD /* 20-IsValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12BE625AC17CD00909FAD /* 20-IsValid.swift */; };
 		04E46ED225B1E1A800ABD464 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E46ED125B1E1A800ABD464 /* PriorityQueue.swift */; };
 		04FA5EC425CBB32400CC4AF2 /* 70-ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA5EC325CBB32400CC4AF2 /* 70-ClimbingStairs.swift */; };
+		04FA5F3325CC063A00CC4AF2 /* 120-Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA5F3225CC063A00CC4AF2 /* 120-Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +110,7 @@
 		04D12BE625AC17CD00909FAD /* 20-IsValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-IsValid.swift"; sourceTree = "<group>"; };
 		04E46ED125B1E1A800ABD464 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		04FA5EC325CBB32400CC4AF2 /* 70-ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "70-ClimbingStairs.swift"; sourceTree = "<group>"; };
+		04FA5F3225CC063A00CC4AF2 /* 120-Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "120-Triangle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				049613D225BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift */,
 				04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */,
 				04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */,
+				04FA5F3225CC063A00CC4AF2 /* 120-Triangle.swift */,
 				04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */,
 				04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */,
 				04D12BD125AADAC700909FAD /* 206-ReverseList.swift */,
@@ -285,6 +288,7 @@
 				04FA5EC425CBB32400CC4AF2 /* 70-ClimbingStairs.swift in Sources */,
 				00F56B5625B9D5CB002C0D56 /* 104-MaximumDepthOfBinaryTree.swift in Sources */,
 				045ACD1D25C1BB4D00F538B2 /* 538-ConvertBSTToGreaterTree.swift in Sources */,
+				04FA5F3325CC063A00CC4AF2 /* 120-Triangle.swift in Sources */,
 				041A098425B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift in Sources */,
 				0095F1E725C856C40002CF48 /* 69-Sqrtx.swift in Sources */,
 				049613D325BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift in Sources */,
