@@ -52,6 +52,7 @@
 		04E46ED225B1E1A800ABD464 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E46ED125B1E1A800ABD464 /* PriorityQueue.swift */; };
 		04FA5EC425CBB32400CC4AF2 /* 70-ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA5EC325CBB32400CC4AF2 /* 70-ClimbingStairs.swift */; };
 		04FA5F3325CC063A00CC4AF2 /* 120-Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA5F3225CC063A00CC4AF2 /* 120-Triangle.swift */; };
+		04FA60E325CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA60E225CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -113,6 +114,7 @@
 		04E46ED125B1E1A800ABD464 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		04FA5EC325CBB32400CC4AF2 /* 70-ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "70-ClimbingStairs.swift"; sourceTree = "<group>"; };
 		04FA5F3225CC063A00CC4AF2 /* 120-Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "120-Triangle.swift"; sourceTree = "<group>"; };
+		04FA60E225CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "152-MaximumProductSubarray.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				04FA5F3225CC063A00CC4AF2 /* 120-Triangle.swift */,
 				04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */,
 				04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */,
+				04FA60E225CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift */,
 				04D12BD125AADAC700909FAD /* 206-ReverseList.swift */,
 				00ED381225ACA25F00922044 /* 225-MyStack.swift */,
 				008F335A25B5E378008C085F /* 226-InvertBinaryTree.swift */,
@@ -306,6 +309,7 @@
 				045ACD2625C282A500F538B2 /* 103-BinaryTreeZigzagLevelOrderTraversal.swift in Sources */,
 				004E45E725CB0A2400FACAF3 /* 35-SearchInsertPosition.swift in Sources */,
 				041179C524C5607600E62BC7 /* main.swift in Sources */,
+				04FA60E325CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift in Sources */,
 				04D12BCC25AAD81F00909FAD /* Hash.swift in Sources */,
 				000CCA0D25B730CB00395714 /* 50-PowxN.swift in Sources */,
 				00E1E82F25C0640C00D0C68B /* 230-KthSmallestElementInBST.swift in Sources */,
