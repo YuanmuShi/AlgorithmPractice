@@ -17,6 +17,21 @@ public class ListNode {
   }
 }
 
+extension ListNode: CustomStringConvertible {
+  public var description: String {
+    var des = ""
+    
+    var p: ListNode? = self
+    while p?.next != nil {
+      des += "\(p?.val ?? 0) -> "
+      p = p?.next
+    }
+    
+    des += "\(p?.val ?? 0)"
+    return des
+  }
+}
+
 public class List {}
 
 extension List {
