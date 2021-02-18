@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		000CCA0D25B730CB00395714 /* 50-PowxN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CCA0C25B730CB00395714 /* 50-PowxN.swift */; };
 		0010FD1825AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010FD1725AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift */; };
+		0016F81425DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016F81325DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift */; };
 		004B44A625CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B44A525CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift */; };
 		004E45E025CAF41900FACAF3 /* 704-BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E45DF25CAF41900FACAF3 /* 704-BinarySearch.swift */; };
 		004E45E325CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E45E225CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift */; };
@@ -75,6 +76,7 @@
 /* Begin PBXFileReference section */
 		000CCA0C25B730CB00395714 /* 50-PowxN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "50-PowxN.swift"; sourceTree = "<group>"; };
 		0010FD1725AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "239-SlidingWindowMaximum.swift"; sourceTree = "<group>"; };
+		0016F81325DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "83-RemoveDuplicatesFromSortedList.swift"; sourceTree = "<group>"; };
 		004B44A525CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33-SearchInRotatedSortedArray.swift"; sourceTree = "<group>"; };
 		004E45DF25CAF41900FACAF3 /* 704-BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "704-BinarySearch.swift"; sourceTree = "<group>"; };
 		004E45E225CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "34-FindFirstAndLastPositionOfElementInSortedArray.swift"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				000CCA0C25B730CB00395714 /* 50-PowxN.swift */,
 				0095F1E625C856C40002CF48 /* 69-Sqrtx.swift */,
 				04FA5EC325CBB32400CC4AF2 /* 70-ClimbingStairs.swift */,
+				0016F81325DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift */,
 				04A4F2B625D3879900AC7CA5 /* 92-ReverseLinkedListII.swift */,
 				041A098325B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift */,
 				049B335E25B7EF41002157E6 /* 102-BinaryTreeLevelOrderTraversal.swift */,
@@ -309,6 +312,7 @@
 				00ED381025ACA02100922044 /* Stack.swift in Sources */,
 				04585CE125BD9E320071145B /* 105-ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */,
 				04FA5EC425CBB32400CC4AF2 /* 70-ClimbingStairs.swift in Sources */,
+				0016F81425DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift in Sources */,
 				00F56B5625B9D5CB002C0D56 /* 104-MaximumDepthOfBinaryTree.swift in Sources */,
 				045ACD1D25C1BB4D00F538B2 /* 538-ConvertBSTToGreaterTree.swift in Sources */,
 				04A4F2B025D2655E00AC7CA5 /* 131-PalindromePartitioning.swift in Sources */,
