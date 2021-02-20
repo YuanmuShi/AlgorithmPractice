@@ -45,24 +45,17 @@ import Foundation
 
 extension Solution {
   static func test53() {
-//    print(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
+    print(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
     print(maxSubArray([1, 2]))
   }
 
   private static func maxSubArray(_ nums: [Int]) -> Int {
     guard nums.count > 1 else { return nums.first ?? 0 }
-    
-    var dp: [Int] = Array(repeating: 0, count: nums.count)
-    dp[0] = nums[0]
-    var result = nums[0]
+
+    var dp: [Int] = [nums[0]]
     for i in 1 ..< nums.count {
-      dp[i] = max(dp[i - 1] + nums[i], nums[i])
-      result = max(result, dp[i])
-
-//      let t = max(num, result + num)
-//      result = max(t, result)
+      dp.append(max(dp[i - 1] + nums[i], nums[i]))
     }
-
-    return result
+    return dp.max() ?? 0
   }
 }
