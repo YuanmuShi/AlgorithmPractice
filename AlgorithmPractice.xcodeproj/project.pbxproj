@@ -11,6 +11,7 @@
 		0010FD1825AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010FD1725AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift */; };
 		0016F81425DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016F81325DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift */; };
 		0016F81825E00CAA0042950E /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016F81725E00CAA0042950E /* 53-MaximumSubarray.swift */; };
+		0016F81C25E7F4AB0042950E /* 139-WordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016F81B25E7F4AB0042950E /* 139-WordBreak.swift */; };
 		004B44A625CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B44A525CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift */; };
 		004E45E025CAF41900FACAF3 /* 704-BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E45DF25CAF41900FACAF3 /* 704-BinarySearch.swift */; };
 		004E45E325CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E45E225CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift */; };
@@ -79,6 +80,7 @@
 		0010FD1725AF4F0900AD5238 /* 239-SlidingWindowMaximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "239-SlidingWindowMaximum.swift"; sourceTree = "<group>"; };
 		0016F81325DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "83-RemoveDuplicatesFromSortedList.swift"; sourceTree = "<group>"; };
 		0016F81725E00CAA0042950E /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
+		0016F81B25E7F4AB0042950E /* 139-WordBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "139-WordBreak.swift"; sourceTree = "<group>"; };
 		004B44A525CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33-SearchInRotatedSortedArray.swift"; sourceTree = "<group>"; };
 		004E45DF25CAF41900FACAF3 /* 704-BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "704-BinarySearch.swift"; sourceTree = "<group>"; };
 		004E45E225CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "34-FindFirstAndLastPositionOfElementInSortedArray.swift"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				04A4F2A825CEE10C00AC7CA5 /* 121-BestTimeToBuyAndSellStock.swift */,
 				04A4F2B325D28DF400AC7CA5 /* 122-BestTimeToBuyAndSellStockII.swift */,
 				04A4F2AF25D2655E00AC7CA5 /* 131-PalindromePartitioning.swift */,
+				0016F81B25E7F4AB0042950E /* 139-WordBreak.swift */,
 				04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */,
 				04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */,
 				04FA60E225CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift */,
@@ -343,6 +346,7 @@
 				04A4F2B725D3879900AC7CA5 /* 92-ReverseLinkedListII.swift in Sources */,
 				045ACD2125C1C00000F538B2 /* 450-DeleteNodeInBST.swift in Sources */,
 				00ED381325ACA25F00922044 /* 225-MyStack.swift in Sources */,
+				0016F81C25E7F4AB0042950E /* 139-WordBreak.swift in Sources */,
 				04A4F2AC25D042CC00AC7CA5 /* 2-AddTwoNumbers.swift in Sources */,
 				04D12BE225AB3D1200909FAD /* 25-ReverseKGroup.swift in Sources */,
 			);
