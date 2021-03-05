@@ -55,6 +55,21 @@ import Foundation
  假设所有操作都是有效的 （例如，一个空的队列不会调用 pop 或者 peek 操作）
  */
 
+extension Solution {
+  static func test232() {
+    
+    let q = MyQueue()
+    q.push(1)
+    q.push(2)
+    print(q.peek())
+    q.push(3)
+    print(q.pop())
+    print(q.pop())
+    print(q.pop())
+    print(q.empty())
+  }
+}
+
 
 class MyQueue {
   
@@ -68,8 +83,8 @@ class MyQueue {
   
   /** Push element x to the back of queue. */
   func push(_ x: Int) {
-    while addStack.top() > 0 {
-      removeStack.push(addStack.pop())
+    while removeStack.top() > 0 {
+      addStack.push(removeStack.pop())
     }
     addStack.push(x)
   }
@@ -87,7 +102,7 @@ class MyQueue {
     while addStack.top() > 0 {
       removeStack.push(addStack.pop())
     }
-    return removeStack.pop()
+    return removeStack.top()
   }
   
   /** Returns whether the queue is empty. */
