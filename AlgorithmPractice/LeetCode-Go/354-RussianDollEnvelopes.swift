@@ -74,6 +74,59 @@ extension Solution {
       }
       return dp.max() ?? 0
     }
-    return lengthOfLIS(heights.compactMap { $0 })
+    
+    // 此方法为 300 题的 O(n*logn) 解决方案
+    func lengthOfLISBest(_ nums: [Int]) -> Int {
+      guard !nums.isEmpty else { return 0 }
+
+      // 35 题答案，二分法查找插入位置
+      func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+        guard !nums.isEmpty else { return 0 }
+
+        var left = 0
+        var right = nums.count - 1
+
+        while left <= right {
+          let index = (left + right) / 2
+          if nums[index] == target {
+            return index
+          } else if nums[index] > target {
+            right = index - 1
+          } else {
+            left = index + 1
+          }
+        }
+
+        if right < 0 {
+          return 0
+        } else if left >= nums.count {
+          return nums.count
+        } else {
+          return left
+        }
+      }
+
+      var lis: [Int] = []
+      for i in 0..<nums.count {
+        let num = nums[i]
+
+        if lis.isEmpty {
+          lis.append(num)
+          continue
+        }
+
+        if lis.last! < num {
+          lis.append(num)
+          continue
+        }
+        
+        let replaceIndex = searchInsert(lis, num)
+        lis[replaceIndex] = num
+      }
+
+      return lis.count
+    }
+    
+    return lengthOfLISBest(heights.compactMap { $0 })
   }
 }

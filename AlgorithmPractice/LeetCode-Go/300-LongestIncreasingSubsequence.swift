@@ -46,9 +46,63 @@ import Foundation
 extension Solution {
   static func test300() {
     print(lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]))
+    print(lengthOfLIS([]))
+    print(lengthOfLIS([2,1]))
   }
 
   private static func lengthOfLIS(_ nums: [Int]) -> Int {
+    guard !nums.isEmpty else { return 0 }
+
+    // 35 题答案，二分法查找插入位置
+    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+      guard !nums.isEmpty else { return 0 }
+
+      var left = 0
+      var right = nums.count - 1
+
+      while left <= right {
+        let index = (left + right) / 2
+        if nums[index] == target {
+          return index
+        } else if nums[index] > target {
+          right = index - 1
+        } else {
+          left = index + 1
+        }
+      }
+
+      if right < 0 {
+        return 0
+      } else if left >= nums.count {
+        return nums.count
+      } else {
+        return left
+      }
+    }
+
+    var lis: [Int] = []
+    for i in 0..<nums.count {
+      let num = nums[i]
+
+      if lis.isEmpty {
+        lis.append(num)
+        continue
+      }
+
+      if lis.last! < num {
+        lis.append(num)
+        continue
+      }
+      
+      let replaceIndex = searchInsert(lis, num)
+      lis[replaceIndex] = num
+    }
+
+    return lis.count
+  }
+
+  // DP 时间复杂度 O(n2)
+  private static func lengthOfLIS1(_ nums: [Int]) -> Int {
     guard !nums.isEmpty else { return 0 }
 
     var dp: [Int] = Array(repeating: 1, count: nums.count)
