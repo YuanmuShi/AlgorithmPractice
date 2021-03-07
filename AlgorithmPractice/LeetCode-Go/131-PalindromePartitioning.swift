@@ -30,11 +30,66 @@ import Foundation
 
 extension Solution {
   static func test131() {
-   print(partition("aab"))
+    print(partition("abbab"))
   }
-  
-  // 回溯法
+
+  // 3.7 每日一题进行判断回文进行记忆化优化
   private static func partition(_ s: String) -> [[String]] {
+    guard !s.isEmpty else { return [] }
+    let count = s.count
+    var results: [[String]] = []
+    var r: [String] = []
+
+    // 记忆化搜索，palindrome[i][j] = 0 表示未搜索，1 表示是回文串，-1 表示不是回文串
+    var palindrome: [[Int]] = Array(repeating: Array(repeating: 0, count: s.count), count: s.count)
+    func checkPalindrome(_ start: Int, _ end: Int) -> Bool {
+      if palindrome[start][end] != 0 {
+        return palindrome[start][end] > 0
+      }
+
+      var startIndex = start
+      var endIndex = end
+      var isPalindrome = true
+
+      while startIndex <= endIndex {
+        let sIndex = s.index(s.startIndex, offsetBy: startIndex)
+        let eIndex = s.index(s.startIndex, offsetBy: endIndex)
+
+        if String(s[sIndex]) != String(s[eIndex]) {
+          isPalindrome = false
+          break
+        }
+        startIndex += 1
+        endIndex -= 1
+      }
+
+      palindrome[start][end] = isPalindrome ? 1 : 0
+      return palindrome[start][end] > 0
+    }
+
+    func dfs(_ index: Int) {
+      guard index < count else {
+        results.append(r)
+        return
+      }
+
+      for i in index..<count {
+        let tmpIndex = s.index(s.startIndex, offsetBy: index)..<s.index(s.startIndex, offsetBy: i + 1)
+
+        if checkPalindrome(index, i) {
+          r.append(String(s[tmpIndex]))
+          dfs(i + 1)
+          r.removeLast()
+        }
+      }
+    }
+
+    dfs(0)
+    return results
+  }
+
+  // 回溯法
+  private static func partition1(_ s: String) -> [[String]] {
     guard !s.isEmpty else { return [[]] }
 
     var allPaths: [[String]] = []
