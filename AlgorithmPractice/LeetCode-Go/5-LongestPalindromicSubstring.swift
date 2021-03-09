@@ -45,7 +45,8 @@ extension Solution {
     print(longestPalindrome("b"))
     print(longestPalindrome("bb"))
     print(longestPalindrome("ba"))
-    print(longestPalindrome("cbbd"))
+    print(longestPalindrome("cbbc"))
+    print(longestPalindrome("aaaa"))
   }
 
   private static func longestPalindrome(_ s: String) -> String {
@@ -65,9 +66,13 @@ extension Solution {
       }
 
       while left >= 0, right < count {
-        if arrayS[left] == arrayS[right], right - left > end - begin {
-          begin = left
-          end = right
+        if arrayS[left] == arrayS[right] {
+          if right - left > end - begin {
+            begin = left
+            end = right
+          }
+          left -= 1
+          right += 1
         } else {
           break
         }
