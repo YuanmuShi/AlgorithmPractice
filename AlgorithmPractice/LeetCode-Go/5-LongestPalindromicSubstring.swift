@@ -50,6 +50,45 @@ extension Solution {
 
   private static func longestPalindrome(_ s: String) -> String {
     let count = s.count
+    guard count > 1 else { return s }
+
+    let arrayS = Array(s)
+    var begin = 0
+    var end = 0
+
+    func searchPalindrome(_ center: Int, _ centerRight: Int? = nil) {
+      var left = center - 1
+      var right = center + 1
+      if let cr = centerRight {
+        left = center
+        right = cr
+      }
+
+      while left >= 0, right < count {
+        if arrayS[left] == arrayS[right], right - left > end - begin {
+          begin = left
+          end = right
+        } else {
+          break
+        }
+      }
+    }
+
+    for i in 0 ..< count {
+      searchPalindrome(i)
+      searchPalindrome(i, i + 1)
+    }
+
+    var result = ""
+    for i in begin ... end {
+      result.append(arrayS[i])
+    }
+    return result
+  }
+
+  // DP
+  private static func longestPalindrome1(_ s: String) -> String {
+    let count = s.count
     let arrayS = Array(s)
     guard count > 2 else {
       if count == 2 {
