@@ -40,9 +40,47 @@ import Foundation
  */
 
 extension Solution {
-  static func test227() {}
+  static func test227() {
+    print(calculate("-3+2*2"))
+    print(calculate("13-2*2"))
+    print(calculate(" 3+5 / 2 "))
+  }
 
+  // 参考题解 https://leetcode-cn.com/problems/basic-calculator-ii/solution/xian-cheng-chu-zai-jia-jian-yong-zhan-ba-hplr/
   private static func calculate(_ s: String) -> Int {
-    return 0
+    let str = s.replacingOccurrences(of: " ", with: "")
+    let strArray = Array(str)
+    let count = strArray.count
+
+    var preOp = "+"
+    var num = 0
+    var nums: [Int] = []
+
+    for i in 0 ..< count {
+      let item = String(strArray[i])
+
+      let n = Int(item)
+      if n != nil {
+        num = num * 10 + n!
+      }
+
+      if n == nil || i >= count - 1 {
+        if preOp == "+" {
+          nums.append(num)
+        } else if preOp == "-" {
+          nums.append(-num)
+        } else if preOp == "*", let last = nums.last {
+          nums.removeLast()
+          nums.append(last * num)
+        } else if preOp == "/", let last = nums.last {
+          nums.removeLast()
+          nums.append(last / num)
+        }
+        preOp = item
+        num = 0
+      }
+    }
+
+    return nums.reduce(0) { $0 + $1 }
   }
 }
