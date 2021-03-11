@@ -13,6 +13,7 @@
 		0016F81825E00CAA0042950E /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016F81725E00CAA0042950E /* 53-MaximumSubarray.swift */; };
 		0016F81C25E7F4AB0042950E /* 139-WordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016F81B25E7F4AB0042950E /* 139-WordBreak.swift */; };
 		0045A6CC25F7C98000F8D793 /* 19-RemoveNthNodeFromEndOfList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045A6CB25F7C98000F8D793 /* 19-RemoveNthNodeFromEndOfList.swift */; };
+		0045A6D125F9A12600F8D793 /* 227-BasicCalculatorII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045A6D025F9A12600F8D793 /* 227-BasicCalculatorII.swift */; };
 		004B44A625CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B44A525CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift */; };
 		004E45E025CAF41900FACAF3 /* 704-BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E45DF25CAF41900FACAF3 /* 704-BinarySearch.swift */; };
 		004E45E325CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E45E225CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift */; };
@@ -93,6 +94,7 @@
 		0016F81725E00CAA0042950E /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
 		0016F81B25E7F4AB0042950E /* 139-WordBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "139-WordBreak.swift"; sourceTree = "<group>"; };
 		0045A6CB25F7C98000F8D793 /* 19-RemoveNthNodeFromEndOfList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19-RemoveNthNodeFromEndOfList.swift"; sourceTree = "<group>"; };
+		0045A6D025F9A12600F8D793 /* 227-BasicCalculatorII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "227-BasicCalculatorII.swift"; sourceTree = "<group>"; };
 		004B44A525CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33-SearchInRotatedSortedArray.swift"; sourceTree = "<group>"; };
 		004E45DF25CAF41900FACAF3 /* 704-BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "704-BinarySearch.swift"; sourceTree = "<group>"; };
 		004E45E225CAFE6D00FACAF3 /* 34-FindFirstAndLastPositionOfElementInSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "34-FindFirstAndLastPositionOfElementInSortedArray.swift"; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				04A4177025F883BC0068054C /* 224-BasicCalculator.swift */,
 				00ED381225ACA25F00922044 /* 225-MyStack.swift */,
 				008F335A25B5E378008C085F /* 226-InvertBinaryTree.swift */,
+				0045A6D025F9A12600F8D793 /* 227-BasicCalculatorII.swift */,
 				00E1E82E25C0640C00D0C68B /* 230-KthSmallestElementInBST.swift */,
 				00ED381525ACA2BA00922044 /* 232-MyQueue.swift */,
 				008F335325B5DC6F008C085F /* 235-LowestCommonAncestorOfaBinarySearchTree.swift */,
@@ -364,6 +367,7 @@
 				045ACD1D25C1BB4D00F538B2 /* 538-ConvertBSTToGreaterTree.swift in Sources */,
 				04A4F2B025D2655E00AC7CA5 /* 131-PalindromePartitioning.swift in Sources */,
 				04FA5F3325CC063A00CC4AF2 /* 120-Triangle.swift in Sources */,
+				0045A6D125F9A12600F8D793 /* 227-BasicCalculatorII.swift in Sources */,
 				041A098425B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift in Sources */,
 				0095F1E725C856C40002CF48 /* 69-Sqrtx.swift in Sources */,
 				049613D325BAEB5B0025F0E2 /* 114-FlattenBinaryTreeToLinkedListSubmissions.swift in Sources */,
