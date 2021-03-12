@@ -45,12 +45,26 @@ import Foundation
  */
 extension Solution {
   static func test331() {
-//    print(isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"))
+    print(isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"))
     print(isValidSerialization("9,#"))
   }
 
-  // 使用 297 方法，将 preorder 先反序列化后再次序列化，判断新序列化的值与传入的值是否相等
+  /*
+   由于题目中将所有空节点都使用 # 代替，因此可以使用树的出入度解决
+   每个非空节点会产生 2 个出度，并且消耗 1 个入度（根节点只产生出度，不消耗入度）
+   则整棵树的入度为：节点数 - 1
+   则整棵树的出度为：非空节点数 * 2
+   若 出度 == 入度，则合法
+   */
   private static func isValidSerialization(_ preorder: String) -> Bool {
+    let nodeVals = preorder.split(separator: ",").map { Int($0) }
+    let inCount = nodeVals.count - 1
+    let outCount = nodeVals.compactMap { $0 }.count * 2
+    return inCount == outCount
+  }
+
+  // 使用 297 方法，将 preorder 先反序列化后再次序列化，判断新序列化的值与传入的值是否相等
+  private static func isValidSerialization1(_ preorder: String) -> Bool {
     let preorderStr = preorder.replacingOccurrences(of: " ", with: "")
     let codec = Codec()
     let newPreorderStr = codec.serialize(codec.deserialize(preorder))
