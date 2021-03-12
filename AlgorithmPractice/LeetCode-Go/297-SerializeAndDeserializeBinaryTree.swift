@@ -68,7 +68,8 @@ class Codec {
     var nodeVals = data.split(separator: ",").map { Int($0) }
 
     func _deserialize() -> TreeNode? {
-      guard let first = nodeVals.removeFirst() else {
+      guard !nodeVals.isEmpty,
+            let first = nodeVals.removeFirst() else {
         return nil
       }
 
