@@ -47,20 +47,33 @@ extension Solution {
   static func test331() {
     print(isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"))
     print(isValidSerialization("9,#"))
+    print(isValidSerialization("#,7,6,9,#,#,#"))
+    print(isValidSerialization("#,#,3,5,#"))
   }
 
   /*
    由于题目中将所有空节点都使用 # 代替，因此可以使用树的出入度解决
    每个非空节点会产生 2 个出度，并且消耗 1 个入度（根节点只产生出度，不消耗入度）
-   则整棵树的入度为：节点数 - 1
+   则整棵树的入度为：节点数 - 1，第一个节点不会消耗入度，确产生出度
    则整棵树的出度为：非空节点数 * 2
-   若 出度 == 入度，则合法
    */
   private static func isValidSerialization(_ preorder: String) -> Bool {
     let nodeVals = preorder.split(separator: ",").map { Int($0) }
-    let inCount = nodeVals.count - 1
-    let outCount = nodeVals.compactMap { $0 }.count * 2
-    return inCount == outCount
+    var diff = 1
+    for val in nodeVals {
+      // 还未结束则出入度已经平衡，则说明不合法
+      if diff == 0 {
+        return false
+      }
+      // 空值，消耗一个入度，不产生出度
+      if val == nil {
+        diff -= 1
+      } else {
+        // 非空值，产生 2 个出度，消耗一个入度，则 diff = diff - 1 + 2
+        diff += 1
+      }
+    }
+    return diff == 0
   }
 
   // 使用 297 方法，将 preorder 先反序列化后再次序列化，判断新序列化的值与传入的值是否相等
