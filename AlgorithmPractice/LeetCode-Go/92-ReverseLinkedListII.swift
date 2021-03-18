@@ -25,11 +25,46 @@ import Foundation
  */
 extension Solution {
   static func test92() {
+//    let head = List.createList([1, 2, 3, 4, 5])
     let head = List.createList([1, 2, 3])
-    print(reverseBetween(head, 2, 3)!)
+    print(reverseBetween(head, 1, 2)!)
   }
   
+  // 3.18 每日一题温故
   private static func reverseBetween(_ head: ListNode?, _ m: Int, _ n: Int) -> ListNode? {
+    guard head?.next != nil, n > m else { return head }
+    
+    var currentNode = head
+    var preNode: ListNode?
+    
+    // 寻找到第 m 个点，作为开始节点，并记录 preNode
+    var steps = 1
+    while steps < m {
+      steps += 1
+      preNode = currentNode
+      currentNode = currentNode?.next
+    }
+    
+    var subPre: ListNode?
+    // 子链表的第一个节点为反转后的子链表尾结点
+    let subTrail = currentNode
+    // 从第 m 个点开始到第 n 个结束，进行单链表反转，反转结束，则 current 指向的是第 n + 1 个点
+    while steps <= n {
+      steps += 1
+      let nextNode = currentNode?.next
+      currentNode?.next = subPre
+      subPre = currentNode
+      currentNode = nextNode
+    }
+    
+    // 子链表反转结束，将 preNode 指向反转后的 head 节点，反转后的 尾结点指向 剩余部分节点
+    preNode?.next = subPre
+    subTrail?.next = currentNode
+    // preNode 为空，说明反转的子链表是从第一个节点开始的，则子链表的 head 就是新链表的 head
+    return preNode == nil ? subPre : head
+  }
+  
+  private static func reverseBetween1(_ head: ListNode?, _ m: Int, _ n: Int) -> ListNode? {
     guard head != nil, head?.next != nil, m < n else { return head }
     
     var preNode: ListNode?
