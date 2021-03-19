@@ -34,6 +34,7 @@
 		0414789D25F098ED00F6193B /* 300-LongestIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414789C25F098ED00F6193B /* 300-LongestIncreasingSubsequence.swift */; };
 		041478A025F09CBD00F6193B /* 354-RussianDollEnvelopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414789F25F09CBD00F6193B /* 354-RussianDollEnvelopes.swift */; };
 		041A098425B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A098325B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift */; };
+		042F3A5E26042AC00055EE44 /* 1603-DesignParkingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3A5D26042AC00055EE44 /* 1603-DesignParkingSystem.swift */; };
 		0439EE9125BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */; };
 		04585CD425BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */; };
 		04585CD925BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */; };
@@ -123,6 +124,7 @@
 		0414789C25F098ED00F6193B /* 300-LongestIncreasingSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "300-LongestIncreasingSubsequence.swift"; sourceTree = "<group>"; };
 		0414789F25F09CBD00F6193B /* 354-RussianDollEnvelopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "354-RussianDollEnvelopes.swift"; sourceTree = "<group>"; };
 		041A098325B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "98-ValidateBinarySearchTree.swift"; sourceTree = "<group>"; };
+		042F3A5D26042AC00055EE44 /* 1603-DesignParkingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1603-DesignParkingSystem.swift"; sourceTree = "<group>"; };
 		0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "297-SerializeAndDeserializeBinaryTree.swift"; sourceTree = "<group>"; };
 		04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "116-PopulatingNextRightPointersInEachNode.swift.swift"; sourceTree = "<group>"; };
 		04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "117-PopulatingNextRightPointersInEachNodeII.swift.swift"; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				04A41E6625FDA1AF0068054C /* 706-DesignHashmap.swift */,
 				0045A6D325FA6E5D00F8D793 /* 896-MonotonicArray.swift */,
 				04A415B125F7330D0068054C /* 1047-RemoveAllAdjacentDuplicatesInString.swift */,
+				042F3A5D26042AC00055EE44 /* 1603-DesignParkingSystem.swift */,
 			);
 			path = "LeetCode-Go";
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				04FA60E325CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift in Sources */,
 				04D12BCC25AAD81F00909FAD /* Hash.swift in Sources */,
 				0045A6D425FA6E5D00F8D793 /* 896-MonotonicArray.swift in Sources */,
+				042F3A5E26042AC00055EE44 /* 1603-DesignParkingSystem.swift in Sources */,
 				000CCA0D25B730CB00395714 /* 50-PowxN.swift in Sources */,
 				00E1E82F25C0640C00D0C68B /* 230-KthSmallestElementInBST.swift in Sources */,
 				04A4F2A925CEE10C00AC7CA5 /* 121-BestTimeToBuyAndSellStock.swift in Sources */,
