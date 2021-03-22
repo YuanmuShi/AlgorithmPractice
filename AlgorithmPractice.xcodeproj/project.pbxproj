@@ -37,6 +37,7 @@
 		042F3A5E26042AC00055EE44 /* 1603-DesignParkingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3A5D26042AC00055EE44 /* 1603-DesignParkingSystem.swift */; };
 		042F3B422605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3B412605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift */; };
 		042F3C212606DF370055EE44 /* 73-SetMatrixZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3C202606DF370055EE44 /* 73-SetMatrixZeroes.swift */; };
+		042F3C25260817A70055EE44 /* 191-NumberOf1Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3C24260817A60055EE44 /* 191-NumberOf1Bits.swift */; };
 		0439EE9125BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */; };
 		04585CD425BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */; };
 		04585CD925BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */; };
@@ -129,6 +130,7 @@
 		042F3A5D26042AC00055EE44 /* 1603-DesignParkingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1603-DesignParkingSystem.swift"; sourceTree = "<group>"; };
 		042F3B412605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "150-EvaluateReversePolishNotation.swift"; sourceTree = "<group>"; };
 		042F3C202606DF370055EE44 /* 73-SetMatrixZeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "73-SetMatrixZeroes.swift"; sourceTree = "<group>"; };
+		042F3C24260817A60055EE44 /* 191-NumberOf1Bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "191-NumberOf1Bits.swift"; sourceTree = "<group>"; };
 		0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "297-SerializeAndDeserializeBinaryTree.swift"; sourceTree = "<group>"; };
 		04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "116-PopulatingNextRightPointersInEachNode.swift.swift"; sourceTree = "<group>"; };
 		04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "117-PopulatingNextRightPointersInEachNodeII.swift.swift"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */,
 				042F3B412605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift */,
 				04FA60E225CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift */,
+				042F3C24260817A60055EE44 /* 191-NumberOf1Bits.swift */,
 				04D12BD125AADAC700909FAD /* 206-ReverseList.swift */,
 				04A4177025F883BC0068054C /* 224-BasicCalculator.swift */,
 				00ED381225ACA25F00922044 /* 225-MyStack.swift */,
@@ -427,6 +430,7 @@
 				042F3A5E26042AC00055EE44 /* 1603-DesignParkingSystem.swift in Sources */,
 				000CCA0D25B730CB00395714 /* 50-PowxN.swift in Sources */,
 				00E1E82F25C0640C00D0C68B /* 230-KthSmallestElementInBST.swift in Sources */,
+				042F3C25260817A70055EE44 /* 191-NumberOf1Bits.swift in Sources */,
 				04A4F2A925CEE10C00AC7CA5 /* 121-BestTimeToBuyAndSellStock.swift in Sources */,
 				04A415B225F7330D0068054C /* 1047-RemoveAllAdjacentDuplicatesInString.swift in Sources */,
 				04585CDE25BD9D620071145B /* 654-MaximumBinaryTree.swift in Sources */,
