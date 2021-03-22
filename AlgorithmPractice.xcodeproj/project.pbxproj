@@ -38,6 +38,8 @@
 		042F3B422605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3B412605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift */; };
 		042F3C212606DF370055EE44 /* 73-SetMatrixZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3C202606DF370055EE44 /* 73-SetMatrixZeroes.swift */; };
 		042F3C25260817A70055EE44 /* 191-NumberOf1Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3C24260817A60055EE44 /* 191-NumberOf1Bits.swift */; };
+		042F3C29260859940055EE44 /* 23-MergeKDortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3C28260859940055EE44 /* 23-MergeKDortedLists.swift */; };
+		042F3DE72608E38E0055EE44 /* 21-MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3DE62608E38E0055EE44 /* 21-MergeTwoSortedLists.swift */; };
 		0439EE9125BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */; };
 		04585CD425BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */; };
 		04585CD925BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */; };
@@ -131,6 +133,8 @@
 		042F3B412605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "150-EvaluateReversePolishNotation.swift"; sourceTree = "<group>"; };
 		042F3C202606DF370055EE44 /* 73-SetMatrixZeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "73-SetMatrixZeroes.swift"; sourceTree = "<group>"; };
 		042F3C24260817A60055EE44 /* 191-NumberOf1Bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "191-NumberOf1Bits.swift"; sourceTree = "<group>"; };
+		042F3C28260859940055EE44 /* 23-MergeKDortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "23-MergeKDortedLists.swift"; sourceTree = "<group>"; };
+		042F3DE62608E38E0055EE44 /* 21-MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21-MergeTwoSortedLists.swift"; sourceTree = "<group>"; };
 		0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "297-SerializeAndDeserializeBinaryTree.swift"; sourceTree = "<group>"; };
 		04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "116-PopulatingNextRightPointersInEachNode.swift.swift"; sourceTree = "<group>"; };
 		04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "117-PopulatingNextRightPointersInEachNodeII.swift.swift"; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 				04A415B525F7351F0068054C /* 5-LongestPalindromicSubstring.swift */,
 				0045A6CB25F7C98000F8D793 /* 19-RemoveNthNodeFromEndOfList.swift */,
 				04D12BE625AC17CD00909FAD /* 20-IsValid.swift */,
+				042F3DE62608E38E0055EE44 /* 21-MergeTwoSortedLists.swift */,
+				042F3C28260859940055EE44 /* 23-MergeKDortedLists.swift */,
 				04D12BD625AB17BB00909FAD /* 24-SwapPairs.swift */,
 				04D12BE125AB3D1200909FAD /* 25-ReverseKGroup.swift */,
 				004B44A525CC57F000583AE8 /* 33-SearchInRotatedSortedArray.swift */,
@@ -368,11 +374,13 @@
 				04585CD925BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift in Sources */,
 				04D12BD725AB17BB00909FAD /* 24-SwapPairs.swift in Sources */,
 				04F136C925EE018300289E32 /* 304-RangeSumQuery2dImmutable.swift in Sources */,
+				042F3DE72608E38E0055EE44 /* 21-MergeTwoSortedLists.swift in Sources */,
 				04A4177125F883BD0068054C /* 224-BasicCalculator.swift in Sources */,
 				04A41E6425FCCB0A0068054C /* 705-DesignHashset.swift in Sources */,
 				04D12BCD25AAD81F00909FAD /* Link.swift in Sources */,
 				04CEC36D25ECAD98007E1B0E /* 303-RangeSumQueryImmutable.swift in Sources */,
 				045AD07F25C51CE200F538B2 /* 257-BinaryTreePaths.swift in Sources */,
+				042F3C29260859940055EE44 /* 23-MergeKDortedLists.swift in Sources */,
 				04D12BCE25AAD81F00909FAD /* Tree.swift in Sources */,
 				041478A025F09CBD00F6193B /* 354-RussianDollEnvelopes.swift in Sources */,
 				047C6A6325ADB6FE002EB275 /* 703-KthLargest.swift in Sources */,

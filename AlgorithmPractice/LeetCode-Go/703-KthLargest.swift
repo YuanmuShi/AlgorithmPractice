@@ -69,10 +69,10 @@ extension Solution {
 }
 
 class KthLargest {
-  private var priorityQueue: PriorityQueue<Int>
+  private var priorityQueue: MyPriorityQueue<Int>
   
   init(_ k: Int, _ nums: [Int]) {
-    priorityQueue = PriorityQueue(collection: nums, capacity: UInt(k))
+    priorityQueue = MyPriorityQueue(collection: nums, capacity: UInt(k))
   }
   
   @discardableResult
