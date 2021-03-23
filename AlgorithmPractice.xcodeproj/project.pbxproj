@@ -41,6 +41,7 @@
 		042F3C29260859940055EE44 /* 23-MergeKDortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3C28260859940055EE44 /* 23-MergeKDortedLists.swift */; };
 		042F3DE72608E38E0055EE44 /* 21-MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3DE62608E38E0055EE44 /* 21-MergeTwoSortedLists.swift */; };
 		042F3DEB2608EDF10055EE44 /* 7-ReverseInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3DEA2608EDF10055EE44 /* 7-ReverseInteger.swift */; };
+		042F3DEE2608F93C0055EE44 /* 341-FlattenNestedListIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F3DED2608F93C0055EE44 /* 341-FlattenNestedListIterator.swift */; };
 		0439EE9125BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */; };
 		04585CD425BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */; };
 		04585CD925BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */; };
@@ -137,6 +138,7 @@
 		042F3C28260859940055EE44 /* 23-MergeKDortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "23-MergeKDortedLists.swift"; sourceTree = "<group>"; };
 		042F3DE62608E38E0055EE44 /* 21-MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21-MergeTwoSortedLists.swift"; sourceTree = "<group>"; };
 		042F3DEA2608EDF10055EE44 /* 7-ReverseInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7-ReverseInteger.swift"; sourceTree = "<group>"; };
+		042F3DED2608F93C0055EE44 /* 341-FlattenNestedListIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "341-FlattenNestedListIterator.swift"; sourceTree = "<group>"; };
 		0439EE9025BED41E009BA9B6 /* 297-SerializeAndDeserializeBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "297-SerializeAndDeserializeBinaryTree.swift"; sourceTree = "<group>"; };
 		04585CD325BC44A60071145B /* 116-PopulatingNextRightPointersInEachNode.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "116-PopulatingNextRightPointersInEachNode.swift.swift"; sourceTree = "<group>"; };
 		04585CD825BC73DF0071145B /* 117-PopulatingNextRightPointersInEachNodeII.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "117-PopulatingNextRightPointersInEachNodeII.swift.swift"; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				04F136C825EE018300289E32 /* 304-RangeSumQuery2dImmutable.swift */,
 				04A41A4C25FB26B10068054C /* 331-VerifyPreorderSerializationOfABinaryTree.swift */,
 				04AF653725EF4CF8005DB07A /* 338-CountingBits.swift */,
+				042F3DED2608F93C0055EE44 /* 341-FlattenNestedListIterator.swift */,
 				0414789F25F09CBD00F6193B /* 354-RussianDollEnvelopes.swift */,
 				045ACD2025C1C00000F538B2 /* 450-DeleteNodeInBST.swift */,
 				04F074E125F34EAD005D0575 /* 503-NextGreaterElementII.swift */,
@@ -418,6 +421,7 @@
 				04A4F2B025D2655E00AC7CA5 /* 131-PalindromePartitioning.swift in Sources */,
 				04FA5F3325CC063A00CC4AF2 /* 120-Triangle.swift in Sources */,
 				0045A6D125F9A12600F8D793 /* 227-BasicCalculatorII.swift in Sources */,
+				042F3DEE2608F93C0055EE44 /* 341-FlattenNestedListIterator.swift in Sources */,
 				041A098425B43BA2007FD85E /* 98-ValidateBinarySearchTree.swift in Sources */,
 				04C437C22601955C00FBA70E /* 115-DistinctSubsequences.swift in Sources */,
 				0095F1E725C856C40002CF48 /* 69-Sqrtx.swift in Sources */,
