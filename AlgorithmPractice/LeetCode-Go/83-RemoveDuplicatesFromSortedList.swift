@@ -27,11 +27,32 @@ import Foundation
 
 extension Solution {
   static func test83() {
-    let head = List.createList([1, 1, 2])
-    print(deleteDuplicates(head)!)
+    let head = List.createList([1,1,2])
+    if let res = deleteDuplicates(head) {
+      print(res)
+    }
+    print("Finished")
   }
 
+  
   private static func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+    guard head?.next != nil else { return head }
+    
+    var node = head
+    while node != nil {
+      if node?.next?.val == node?.val {
+        let tmp = node?.next
+        node?.next = node?.next?.next
+        tmp?.next = nil
+      } else {
+        node = node?.next
+      }
+    }
+    
+    return head
+  }
+  
+  private static func deleteDuplicates1(_ head: ListNode?) -> ListNode? {
     guard head?.next != nil else { return head }
 
     var pre = head
