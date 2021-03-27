@@ -71,6 +71,7 @@
 		04A4F2B425D28DF400AC7CA5 /* 122-BestTimeToBuyAndSellStockII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4F2B325D28DF400AC7CA5 /* 122-BestTimeToBuyAndSellStockII.swift */; };
 		04A4F2B725D3879900AC7CA5 /* 92-ReverseLinkedListII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4F2B625D3879900AC7CA5 /* 92-ReverseLinkedListII.swift */; };
 		04AF653825EF4CF8005DB07A /* 338-CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF653725EF4CF8005DB07A /* 338-CountingBits.swift */; };
+		04BA2370260ECD34000DBEAA /* 61-RotateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA236F260ECD34000DBEAA /* 61-RotateList.swift */; };
 		04C4364525FF1B8900FBA70E /* 54-SpiralMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4364425FF1B8900FBA70E /* 54-SpiralMatrix.swift */; };
 		04C4364925FF225900FBA70E /* 59-SpiralMatrixII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4364825FF225900FBA70E /* 59-SpiralMatrixII.swift */; };
 		04C437C22601955C00FBA70E /* 115-DistinctSubsequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C437C12601955C00FBA70E /* 115-DistinctSubsequences.swift */; };
@@ -171,6 +172,7 @@
 		04A4F2B325D28DF400AC7CA5 /* 122-BestTimeToBuyAndSellStockII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "122-BestTimeToBuyAndSellStockII.swift"; sourceTree = "<group>"; };
 		04A4F2B625D3879900AC7CA5 /* 92-ReverseLinkedListII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "92-ReverseLinkedListII.swift"; sourceTree = "<group>"; };
 		04AF653725EF4CF8005DB07A /* 338-CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "338-CountingBits.swift"; sourceTree = "<group>"; };
+		04BA236F260ECD34000DBEAA /* 61-RotateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "61-RotateList.swift"; sourceTree = "<group>"; };
 		04C4364425FF1B8900FBA70E /* 54-SpiralMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "54-SpiralMatrix.swift"; sourceTree = "<group>"; };
 		04C4364825FF225900FBA70E /* 59-SpiralMatrixII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "59-SpiralMatrixII.swift"; sourceTree = "<group>"; };
 		04C437C12601955C00FBA70E /* 115-DistinctSubsequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "115-DistinctSubsequences.swift"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				0016F81725E00CAA0042950E /* 53-MaximumSubarray.swift */,
 				04C4364425FF1B8900FBA70E /* 54-SpiralMatrix.swift */,
 				04C4364825FF225900FBA70E /* 59-SpiralMatrixII.swift */,
+				04BA236F260ECD34000DBEAA /* 61-RotateList.swift */,
 				0095F1E625C856C40002CF48 /* 69-Sqrtx.swift */,
 				04FA5EC325CBB32400CC4AF2 /* 70-ClimbingStairs.swift */,
 				042F3C202606DF370055EE44 /* 73-SetMatrixZeroes.swift */,
@@ -275,6 +278,7 @@
 				0016F81B25E7F4AB0042950E /* 139-WordBreak.swift */,
 				04D12BDA25AB211B00909FAD /* 141-HasCycle.swift */,
 				04D12BDE25AB333000909FAD /* 142-DetectCycle.swift */,
+				048E4866260C825C00DEEBA9 /* 143-ReorderList.swift */,
 				042F3B412605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift */,
 				04FA60E225CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift */,
 				042F3C24260817A60055EE44 /* 191-NumberOf1Bits.swift */,
@@ -310,7 +314,6 @@
 				0045A6D325FA6E5D00F8D793 /* 896-MonotonicArray.swift */,
 				04A415B125F7330D0068054C /* 1047-RemoveAllAdjacentDuplicatesInString.swift */,
 				042F3A5D26042AC00055EE44 /* 1603-DesignParkingSystem.swift */,
-				048E4866260C825C00DEEBA9 /* 143-ReorderList.swift */,
 			);
 			path = "LeetCode-Go";
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				04A41E6425FCCB0A0068054C /* 705-DesignHashset.swift in Sources */,
 				04D12BCD25AAD81F00909FAD /* Link.swift in Sources */,
 				04CEC36D25ECAD98007E1B0E /* 303-RangeSumQueryImmutable.swift in Sources */,
+				04BA2370260ECD34000DBEAA /* 61-RotateList.swift in Sources */,
 				045AD07F25C51CE200F538B2 /* 257-BinaryTreePaths.swift in Sources */,
 				042F3C29260859940055EE44 /* 23-MergeKDortedLists.swift in Sources */,
 				04D12BCE25AAD81F00909FAD /* Tree.swift in Sources */,
