@@ -72,6 +72,7 @@
 		04A4F2B725D3879900AC7CA5 /* 92-ReverseLinkedListII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4F2B625D3879900AC7CA5 /* 92-ReverseLinkedListII.swift */; };
 		04AF653825EF4CF8005DB07A /* 338-CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF653725EF4CF8005DB07A /* 338-CountingBits.swift */; };
 		04BA2370260ECD34000DBEAA /* 61-RotateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA236F260ECD34000DBEAA /* 61-RotateList.swift */; };
+		04BA2374261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA2373261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift */; };
 		04C4364525FF1B8900FBA70E /* 54-SpiralMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4364425FF1B8900FBA70E /* 54-SpiralMatrix.swift */; };
 		04C4364925FF225900FBA70E /* 59-SpiralMatrixII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4364825FF225900FBA70E /* 59-SpiralMatrixII.swift */; };
 		04C437C22601955C00FBA70E /* 115-DistinctSubsequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C437C12601955C00FBA70E /* 115-DistinctSubsequences.swift */; };
@@ -173,6 +174,7 @@
 		04A4F2B625D3879900AC7CA5 /* 92-ReverseLinkedListII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "92-ReverseLinkedListII.swift"; sourceTree = "<group>"; };
 		04AF653725EF4CF8005DB07A /* 338-CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "338-CountingBits.swift"; sourceTree = "<group>"; };
 		04BA236F260ECD34000DBEAA /* 61-RotateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "61-RotateList.swift"; sourceTree = "<group>"; };
+		04BA2373261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "173-BinarySearchTreeIterator.swift"; sourceTree = "<group>"; };
 		04C4364425FF1B8900FBA70E /* 54-SpiralMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "54-SpiralMatrix.swift"; sourceTree = "<group>"; };
 		04C4364825FF225900FBA70E /* 59-SpiralMatrixII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "59-SpiralMatrixII.swift"; sourceTree = "<group>"; };
 		04C437C12601955C00FBA70E /* 115-DistinctSubsequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "115-DistinctSubsequences.swift"; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				048E4866260C825C00DEEBA9 /* 143-ReorderList.swift */,
 				042F3B412605C3260055EE44 /* 150-EvaluateReversePolishNotation.swift */,
 				04FA60E225CD47C700CC4AF2 /* 152-MaximumProductSubarray.swift */,
+				04BA2373261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift */,
 				042F3C24260817A60055EE44 /* 191-NumberOf1Bits.swift */,
 				04D12BD125AADAC700909FAD /* 206-ReverseList.swift */,
 				04A4177025F883BC0068054C /* 224-BasicCalculator.swift */,
@@ -394,6 +397,7 @@
 				04F136C925EE018300289E32 /* 304-RangeSumQuery2dImmutable.swift in Sources */,
 				042F3DE72608E38E0055EE44 /* 21-MergeTwoSortedLists.swift in Sources */,
 				04A4177125F883BD0068054C /* 224-BasicCalculator.swift in Sources */,
+				04BA2374261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift in Sources */,
 				04A41E6425FCCB0A0068054C /* 705-DesignHashset.swift in Sources */,
 				04D12BCD25AAD81F00909FAD /* Link.swift in Sources */,
 				04CEC36D25ECAD98007E1B0E /* 303-RangeSumQueryImmutable.swift in Sources */,
