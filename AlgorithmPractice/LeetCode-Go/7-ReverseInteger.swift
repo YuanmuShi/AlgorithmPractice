@@ -44,14 +44,29 @@ import Foundation
 extension Solution {
   static func test7() {
 //    print(reverse(123))
-//    print(reverse(-123))
+    print(reverse(-123))
 //    print(reverse(0))
 //    print(reverse(-1))
-
-    print(reverse(1534236469))
+//    print(reverse(1534236469))
   }
 
   private static func reverse(_ x: Int) -> Int {
+    var rev = 0
+    var temp = x
+    while temp != 0 {
+      let n = temp % 10
+      temp = temp / 10
+      rev = rev * 10 + n
+    }
+
+    if rev > Int32.max || rev < Int32.min {
+      return 0
+    }
+
+    return rev
+  }
+
+  private static func reverse1(_ x: Int) -> Int {
     guard x <= Int32.max, x >= Int32.min else { return 0 }
 
     let positive = x >= 0
