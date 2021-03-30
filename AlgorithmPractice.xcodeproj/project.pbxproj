@@ -74,6 +74,7 @@
 		04BA2370260ECD34000DBEAA /* 61-RotateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA236F260ECD34000DBEAA /* 61-RotateList.swift */; };
 		04BA2374261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA2373261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift */; };
 		04BA237826116C14000DBEAA /* 190-ReverseBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA237726116C14000DBEAA /* 190-ReverseBits.swift */; };
+		04BA23B52612D540000DBEAA /* 74-SearchA2DMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA23B42612D540000DBEAA /* 74-SearchA2DMatrix.swift */; };
 		04C4364525FF1B8900FBA70E /* 54-SpiralMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4364425FF1B8900FBA70E /* 54-SpiralMatrix.swift */; };
 		04C4364925FF225900FBA70E /* 59-SpiralMatrixII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4364825FF225900FBA70E /* 59-SpiralMatrixII.swift */; };
 		04C437C22601955C00FBA70E /* 115-DistinctSubsequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C437C12601955C00FBA70E /* 115-DistinctSubsequences.swift */; };
@@ -177,6 +178,7 @@
 		04BA236F260ECD34000DBEAA /* 61-RotateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "61-RotateList.swift"; sourceTree = "<group>"; };
 		04BA2373261023CF000DBEAA /* 173-BinarySearchTreeIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "173-BinarySearchTreeIterator.swift"; sourceTree = "<group>"; };
 		04BA237726116C14000DBEAA /* 190-ReverseBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "190-ReverseBits.swift"; sourceTree = "<group>"; };
+		04BA23B42612D540000DBEAA /* 74-SearchA2DMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "74-SearchA2DMatrix.swift"; sourceTree = "<group>"; };
 		04C4364425FF1B8900FBA70E /* 54-SpiralMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "54-SpiralMatrix.swift"; sourceTree = "<group>"; };
 		04C4364825FF225900FBA70E /* 59-SpiralMatrixII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "59-SpiralMatrixII.swift"; sourceTree = "<group>"; };
 		04C437C12601955C00FBA70E /* 115-DistinctSubsequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "115-DistinctSubsequences.swift"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				0095F1E625C856C40002CF48 /* 69-Sqrtx.swift */,
 				04FA5EC325CBB32400CC4AF2 /* 70-ClimbingStairs.swift */,
 				042F3C202606DF370055EE44 /* 73-SetMatrixZeroes.swift */,
+				04BA23B42612D540000DBEAA /* 74-SearchA2DMatrix.swift */,
 				048E4860260C4A8A00DEEBA9 /* 82-RemoveDuplicatesFromSortedListII.swift */,
 				0016F81325DEB74C0042950E /* 83-RemoveDuplicatesFromSortedList.swift */,
 				04A4F2B625D3879900AC7CA5 /* 92-ReverseLinkedListII.swift */,
@@ -479,6 +482,7 @@
 				045ACD2125C1C00000F538B2 /* 450-DeleteNodeInBST.swift in Sources */,
 				00ED381325ACA25F00922044 /* 225-MyStack.swift in Sources */,
 				0016F81C25E7F4AB0042950E /* 139-WordBreak.swift in Sources */,
+				04BA23B52612D540000DBEAA /* 74-SearchA2DMatrix.swift in Sources */,
 				04A4F2AC25D042CC00AC7CA5 /* 2-AddTwoNumbers.swift in Sources */,
 				04D12BE225AB3D1200909FAD /* 25-ReverseKGroup.swift in Sources */,
 			);
